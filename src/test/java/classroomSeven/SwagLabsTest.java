@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
+import pageObjects.ProductsPage;
 
 import java.util.List;
 
@@ -57,6 +58,25 @@ public class SwagLabsTest {
         Thread.sleep(5000); //pauze un 5 sekundem
     }
 
+
+    @Test
+    public void testSuccessLogin() {
+        driver.get(SWAGLABS_URL);
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("standard_user", "secret_sauce");
+        ProductsPage productsPage = new ProductsPage(driver);
+        Assert.assertEquals(productsPage.getPageTitle().getText(), "PRODUCTS");
+    }
+
+    @Test
+    public void testSuccessLogin2() {
+        driver.get(SWAGLABS_URL);
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("standard user", "parole");
+
+    }
+
+
     @Test
     public void testSuccessfullLogin() throws InterruptedException {
         driver.get(SWAGLABS_URL);
@@ -84,6 +104,29 @@ public class SwagLabsTest {
     }
 
 
+
+    @Test
+    public void testErrorMessageWithoutPasswordWithPOM(){
+        driver.get(SWAGLABS_URL);
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.getUsernameField().sendKeys("standard_user");
+        loginPage.getPasswordField().sendKeys("");
+        loginPage.getLoginButton().click();
+        loginPage.getErrorMessageTextField().getText();
+        String actualText = loginPage.getErrorMessageTextField().getText();
+        String expectedErrorMessage = "Epic sadface: Password is required";
+        Assert.assertEquals(actualText,expectedErrorMessage);
+    }
+
+    @Test
+    public void testErrorMessageWithoutUsernameWPOM() {
+        driver.get(SWAGLABS_URL);
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("", "parole");
+        String actualText = loginPage.getErrorMessageTextField().getText();
+        String expectedErrorMessage = "Epic sadface: Username is required";
+        Assert.assertEquals(actualText, expectedErrorMessage);
+    }
 
 
 
@@ -125,13 +168,6 @@ public class SwagLabsTest {
        Thread.sleep(5000);
         }
 
-//    @Test
-//    public void testErrorMessageWithPOM(){
-//        driver.get(SWAGLABS_URL);
-//
-//        LoginPage loginPage = new LoginPage(driver);
-//        LoginPage getUsernameField().sendKeys("");
-//    }
 
 
 
