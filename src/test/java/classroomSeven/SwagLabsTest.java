@@ -69,7 +69,7 @@ public class SwagLabsTest {
         loginButton.click();
 
         WebElement titleText = driver.findElement(By.cssSelector("span[class='title'"));
-        Assert.assertEquals(titleText.getText(),"PRODUCTS");
+        Assert.assertEquals(titleText.getText(), "PRODUCTS");
 
         WebElement linkedInLink = driver.findElement(By.cssSelector("li[class='social_linkedin']>a"));
         linkedInLink.click();
@@ -77,54 +77,61 @@ public class SwagLabsTest {
         Select sortDropDown = new Select(driver.findElement(By.className("product_sort_container")));
         sortDropDown.selectByValue("hilo");
 
-        WebElement addFleeceJacketToCardButtons = driver.findElement(By.xpath(//button[@id='add-to-cart-sauce-labs-fleece-jacket']));
-
-
-        Thread.sleep(5000); //pauze un 5 sekundem
-
-
-
+        WebElement addFleeceJacketToCartButton = driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-fleece-jacket']"));
+        addFleeceJacketToCartButton.click();
+        Thread.sleep(5000);
 
     }
 
+
+
+
+
+       @Test
+        public void testSamplePage() throws InterruptedException {
+            driver.get(LOCAL_URL);
+            WebElement lazyLoadingText = driver.findElement(By.id("checkDataResultID"));
+            WebElement buttonCLick = driver.findElement(By.id("checkDataID"));
+            buttonCLick.click();
+            lazyLoadingText.click();
+       WebElement vards = driver.findElement(By.id("fNameID"));
+        vards.sendKeys("Juris");
+
+       WebElement uzvards = driver.findElement(By.id("lNameID"));
+       uzvards.sendKeys("Kreilis");
+
+       WebElement informacija = driver.findElement(By.name("description"));
+        informacija.clear();
+        informacija.sendKeys("Šī ir info par mani");
+
+        WebElement studenCheckbox = driver.findElement(By.id("studentID"));
+        studenCheckbox.click();
+
+        WebElement radioButtonJava = driver.findElement(By.id("javaID"));
+        System.out.println(radioButtonJava.isSelected());
+       radioButtonJava.click();
+        System.out.println(radioButtonJava.isSelected());
+
+        Select milakaKrasaDropdown = new Select(driver.findElement(By.id("colorsID")));
+       milakaKrasaDropdown.selectByIndex(0);
+        milakaKrasaDropdown.selectByIndex(1);
+
+        List<WebElement> saraksts = milakaKrasaDropdown.getOptions();
+
+       for (int i = 0; i < saraksts.size(); i++) {
+            System.out.println(saraksts.get(i).getText());
+       }
+
+       Thread.sleep(5000);
+        }
 
 //    @Test
+//    public void testErrorMessageWithPOM(){
+//        driver.get(SWAGLABS_URL);
 //
-//    public void testSamplePage() throws InterruptedException {
-//        driver.get(LOCAL_URL);
-//        WebElement vards = driver.findElement(By.id("fNameID"));
-//        vards.sendKeys("Diana");
-//        WebElement uzvards = driver.findElement(By.id("lNameID"));
-//        uzvards.sendKeys("Stepule");
-//        WebElement informacija = driver.findElement(By.name("description"));
-//        informacija.clear();
-//        informacija.sendKeys("Si ir info par mani");
-//        WebElement studentCheckBox = driver.findElement(By.id("studentID"));
-//        studentCheckBox.click();
-//        WebElement radioButtonJava = driver.findElement(By.id("javaID"));
-//        System.out.println(radioButtonJava.isSelected());
-//        radioButtonJava.click();
-//        System.out.println(radioButtonJava.isSelected());
-//        radioButtonJava.isSelected();
-//        Select milakaKrasaDropdown = new Select(driver.findElement(By.id("colorsID")));
-//        milakaKrasaDropdown.selectByIndex(0);
-//        milakaKrasaDropdown.selectByIndex(1);
-//
-//        List<WebElement> saraksts = milakaKrasaDropdown.getOptions();
-//        for (int i = 0; i < saraksts.size(); i++){
-//            System.out.println(saraksts.get(i).getText());
-//        }
-//
-//        Thread.sleep(5000);
+//        LoginPage loginPage = new LoginPage(driver);
+//        LoginPage getUsernameField().sendKeys("");
 //    }
-
-    @Test
-    public void testErrorMessageWithPOM(){
-        driver.get(SWAGLABS_URL);
-
-        LoginPage loginPage = new LoginPage(driver);
-        LoginPage getUsernameField().sendKeys("");
-    }
 
 
 
