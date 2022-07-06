@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pageObjects.Footer;
 import pageObjects.LoginPage;
 import pageObjects.ProductsPage;
 
@@ -76,6 +77,16 @@ public class SwagLabsTest {
 
     }
 
+    @Test
+    public void testFooterCopyRightText() {
+        driver.get(SWAGLABS_URL);
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login("standard_user", "secret_sauce");
+        Footer footer = new Footer(driver);
+        String actualString = footer.getCopyRightTextField().getText();
+        String expectedString = "© 2022 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy";
+        Assert.assertEquals(actualString, expectedString);
+    }
 
     @Test
     public void testSuccessfullLogin() throws InterruptedException {

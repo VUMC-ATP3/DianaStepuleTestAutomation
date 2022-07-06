@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f90dd257-d269-467f-ab8f-f725fe640163" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/acodemyShop/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/classroomEight/AcodemyShopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Footer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/classroomSeven/SwagLabsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/classroomSeven/SwagLabsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,18 +49,18 @@
       <recent name="C:\Users\Indiana\OneDrive\Desktop\DianaStepuleTestAutomation" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SwagLabsTest.testSuccessLogin2">
-    <configuration name="SwagLabsTest.testErrorMessageWithPOM" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AcodemyShopTest.testSearch">
+    <configuration name="AcodemyShopTest.keyBoardActionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DianaStepuleTestAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classroomSeven.*" />
+          <option name="PATTERN" value="classroomEight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classroomSeven" />
-      <option name="MAIN_CLASS_NAME" value="classroomSeven.SwagLabsTest" />
-      <option name="METHOD_NAME" value="testErrorMessageWithPOM" />
+      <option name="PACKAGE_NAME" value="classroomEight" />
+      <option name="MAIN_CLASS_NAME" value="classroomEight.AcodemyShopTest" />
+      <option name="METHOD_NAME" value="keyBoardActionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -67,17 +68,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwagLabsTest.testErrorMessageWithoutUsernameWPOM" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AcodemyShopTest.mouseActionsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DianaStepuleTestAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classroomSeven.*" />
+          <option name="PATTERN" value="classroomEight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classroomSeven" />
-      <option name="MAIN_CLASS_NAME" value="classroomSeven.SwagLabsTest" />
-      <option name="METHOD_NAME" value="testErrorMessageWithoutUsernameWPOM" />
+      <option name="PACKAGE_NAME" value="classroomEight" />
+      <option name="MAIN_CLASS_NAME" value="classroomEight.AcodemyShopTest" />
+      <option name="METHOD_NAME" value="mouseActionsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -85,17 +86,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwagLabsTest.testSamplePage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AcodemyShopTest.tesSwithcTab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DianaStepuleTestAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classroomSeven.*" />
+          <option name="PATTERN" value="classroomEight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classroomSeven" />
-      <option name="MAIN_CLASS_NAME" value="classroomSeven.SwagLabsTest" />
-      <option name="METHOD_NAME" value="testSamplePage" />
+      <option name="PACKAGE_NAME" value="classroomEight" />
+      <option name="MAIN_CLASS_NAME" value="classroomEight.AcodemyShopTest" />
+      <option name="METHOD_NAME" value="tesSwithcTab" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,17 +104,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwagLabsTest.testSuccessLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AcodemyShopTest.testJavascript" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DianaStepuleTestAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classroomSeven.*" />
+          <option name="PATTERN" value="classroomEight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classroomSeven" />
-      <option name="MAIN_CLASS_NAME" value="classroomSeven.SwagLabsTest" />
-      <option name="METHOD_NAME" value="testSuccessLogin" />
+      <option name="PACKAGE_NAME" value="classroomEight" />
+      <option name="MAIN_CLASS_NAME" value="classroomEight.AcodemyShopTest" />
+      <option name="METHOD_NAME" value="testJavascript" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -121,17 +122,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwagLabsTest.testSuccessLogin2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AcodemyShopTest.testSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DianaStepuleTestAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classroomSeven.*" />
+          <option name="PATTERN" value="classroomEight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="classroomSeven" />
-      <option name="MAIN_CLASS_NAME" value="classroomSeven.SwagLabsTest" />
-      <option name="METHOD_NAME" value="testSuccessLogin2" />
+      <option name="PACKAGE_NAME" value="classroomEight" />
+      <option name="MAIN_CLASS_NAME" value="classroomEight.AcodemyShopTest" />
+      <option name="METHOD_NAME" value="testSearch" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SwagLabsTest.testSuccessLogin2" />
-        <item itemvalue="TestNG.SwagLabsTest.testSuccessLogin" />
-        <item itemvalue="TestNG.SwagLabsTest.testErrorMessageWithoutUsernameWPOM" />
-        <item itemvalue="TestNG.SwagLabsTest.testErrorMessageWithPOM" />
-        <item itemvalue="TestNG.SwagLabsTest.testSamplePage" />
+        <item itemvalue="TestNG.AcodemyShopTest.testSearch" />
+        <item itemvalue="TestNG.AcodemyShopTest.mouseActionsTest" />
+        <item itemvalue="TestNG.AcodemyShopTest.keyBoardActionTest" />
+        <item itemvalue="TestNG.AcodemyShopTest.testJavascript" />
+        <item itemvalue="TestNG.AcodemyShopTest.tesSwithcTab" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656958862929</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit">
+      <created>1656963531880</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656963531880</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,8 +210,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/classroomSeven/SwagLabsTest.java</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/classroomEight/AcodemyShopTest.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
