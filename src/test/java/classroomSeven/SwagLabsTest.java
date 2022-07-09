@@ -112,6 +112,7 @@ public class SwagLabsTest {
         addFleeceJacketToCartButton.click();
         Thread.sleep(5000);
 
+
     }
 
 
