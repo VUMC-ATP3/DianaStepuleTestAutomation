@@ -8,7 +8,6 @@ public class LoginPage {
     public WebDriver driver;
 
     public LoginPage(WebDriver driver) {
-
         this.driver = driver;
     }
 
@@ -31,8 +30,8 @@ public class LoginPage {
     public WebElement getPasswordField() {
         return driver.findElement(passwordInputField);
     }
-    public WebElement getLoginButton(){
 
+    public WebElement getLoginButton(){
         return driver.findElement(loginButton);
     }
 

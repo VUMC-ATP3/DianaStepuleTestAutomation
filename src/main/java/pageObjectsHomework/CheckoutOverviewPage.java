@@ -6,9 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class CheckoutOverviewPage {
     public WebDriver driver;
-    public CheckoutOverviewPage(WebDriver driver) {
-
-        this.driver = driver;
+    public CheckoutOverviewPage(WebDriver driver) { this.driver = driver;
     }
 
     private By itemName = By.xpath("//div[@class='inventory_item_name']");
